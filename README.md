@@ -1,35 +1,28 @@
 # AngryPurpleTiger
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/angry_purple_tiger`. To experiment with that code, run `bin/console` for an interactive prompt.
+Ruby port of [helum/angry-purple-tiger](https://github.com/helium/angry-purple-tiger)
 
-TODO: Delete this and the text above, and describe your gem
+Takes any string and converts it into a friendly human phrase consisting of 3 words
 
-## Installation
+`<adjective> <color> <animal>`
 
-Add this line to your application's Gemfile:
+This naming convention is used in the helium network for naming [hundreds of thousands of hotspots](https://explorer.helium.com/hotspots). 
 
-```ruby
-gem 'angry_purple_tiger'
-```
+![](./images/helium.png)
 
-And then execute:
+There are `256^3` (`16,777,216`) possible combinations of 3 letter words. 
+This algorithm is deterministic in that the same input will always produce the same output, however it is not guaranteed to be free from collisions. 
 
-    $ bundle
 
-Or install it yourself as:
-
-    $ gem install angry_purple_tiger
+| input | 3 words |
+| `my ugly input string` |  `rapid grey rattlesnake` | 
+| `C89A436B-66C5-4427-9480-A67BB3211943` |  `petite tin mantis` | 
+| `DE:AD:BE:EF:CO:FE` | `formal berry kitten` | 
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/angry_purple_tiger.
+```
+require angry_purple_tiger
+AngryPurpleTiger.new('my ugly input string')
+=> "rapid grey rattlesnake"
+```
