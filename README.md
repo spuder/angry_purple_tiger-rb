@@ -15,6 +15,7 @@ This algorithm is deterministic in that the same input will always produce the s
 
 
 | input | 3 words |
+| --- | --- |
 | `my ugly input string` |  `rapid grey rattlesnake` | 
 | `C89A436B-66C5-4427-9480-A67BB3211943` |  `petite tin mantis` | 
 | `DE:AD:BE:EF:CO:FE` | `formal berry kitten` | 
