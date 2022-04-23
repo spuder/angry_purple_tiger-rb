@@ -22,7 +22,7 @@ This algorithm is deterministic in that the same input will always produce the s
 
 ## Usage
 
-```
+```ruby
 require angry_purple_tiger
 AngryPurpleTiger.new('my ugly input string')
 => "rapid grey rattlesnake"
