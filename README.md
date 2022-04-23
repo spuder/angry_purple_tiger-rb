@@ -1,3 +1,4 @@
+![<img src="./images/purple-tiger.png" width-"100"/>](./images/purple-tiger.png)
 # AngryPurpleTiger
 
 Ruby port of [helum/angry-purple-tiger](https://github.com/helium/angry-purple-tiger)
@@ -26,4 +27,12 @@ This algorithm is deterministic in that the same input will always produce the s
 require angry_purple_tiger
 AngryPurpleTiger.new('my ugly input string')
 => "rapid grey rattlesnake"
+```
+
+## Development
+
+If developing locally, you may need to change `require angry_purple_tiger` to `require_relative './lib/angry_purple_tiger'` 
+```ruby
+require_relative './lib/angry_purple_tiger'
+
 ```
