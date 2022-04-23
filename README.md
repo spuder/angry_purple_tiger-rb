@@ -31,8 +31,12 @@ AngryPurpleTiger.new('my ugly input string')
 
 ## Development
 
-If developing locally, you may need to change `require angry_purple_tiger` to `require_relative './lib/angry_purple_tiger'` 
+If developing locally, you may need to change 
+`require angry_purple_tiger` 
+to 
+`require_relative './lib/angry_purple_tiger'` 
 ```ruby
 require_relative './lib/angry_purple_tiger'
-
+AngryPurpleTiger.new('my ugly input string')
+=> "rapid grey rattlesnake"
 ```
